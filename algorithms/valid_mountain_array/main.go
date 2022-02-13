@@ -36,6 +36,10 @@ func valid_mountain_array2(arr []int) (ret bool) {
 	//  INCREASING subsequence
 	var tracker int
 
+	if  len(arr) < 3 {
+		return false
+	}
+
 	for i:=1; i<len(arr) && arr[i] > arr[i-1]; i++ {
 		tracker = i
 	}
@@ -48,14 +52,13 @@ func valid_mountain_array2(arr []int) (ret bool) {
 		
 		tracker = i
 	}
-	if tracker ==  len(arr) -1 {
-		return true
-	}
-	return 
+	return tracker ==  len(arr) -1 
 }
 
 
 func main()  {
+	arr0 := []int{3, 1}
+	fmt.Println(arr0,  valid_mountain_array(arr0))
 	arr1 := []int{1, 3, 5, 8, 10, 13, 12, 8, 4, 2}
 	fmt.Println(arr1,  valid_mountain_array(arr1))
 	arr2 := []int{1, 3, 5, 8, 10, 13, 12, 15, 4, 2}
