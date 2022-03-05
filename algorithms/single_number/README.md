@@ -5,3 +5,4 @@ Given a non-empty array of integers, every element appears twice except for the 
 ```
 
 [Problem link](https://leetcode.com/problems/single-number/)
+algorithms/single_number/README.md
