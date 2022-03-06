@@ -9,8 +9,4 @@ L: left, decrease in x axis
 
 ```
 
-<<<<<<< HEAD
 [Problem link](https://leetcode.com/problems/robot-return-to-origin/)
-=======
-[Problem link](https://leetcode.com/problems/robot-return-to-origin/)
->>>>>>> 57957f6 (directory name updated to problems)
