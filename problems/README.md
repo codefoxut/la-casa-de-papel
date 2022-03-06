@@ -9,3 +9,5 @@
 1. [Add Binary](./add_binary/)
 1. [Two Sum](./two_sum/)
 1. [Contains Duplicate](./contains_duplicate/)
+1. [Majority Element](./majority_element/)
+1. [Group Anagram](./group_anagrams/)
