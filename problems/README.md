@@ -8,3 +8,4 @@
 1. [Single Number](./single_number/)
 1. [Add Binary](./add_binary/)
 1. [Two Sum](./two_sum/)
+1. [Contains Duplicate](./contains_duplicate/)
