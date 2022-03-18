@@ -14,3 +14,5 @@
 1. [4 Sum II](./4sum_problem/)
 1. [LRU Cache](./lru_cache/)
 1. [Minimum Window Substring](./minimum_window_substring/)
+
+1. [Merge Two Sorted Arrays](./merge_two_sorted_list/)
