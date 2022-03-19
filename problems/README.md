@@ -16,3 +16,9 @@
 1. [Minimum Window Substring](./minimum_window_substring/)
 
 1. [Merge Two Sorted Arrays](./merge_two_sorted_list/)
+1. [Linked List  Cycle](./linked_list_cycle/)
+1. [Reverse Linked List](./reverse_the_list/)
+1. [Add Two Numbers](./add_two_numbers/)
+1. [Remove nth Node](./remove_nth_node/)
+1. [Odd Even Linked List](./odd_even_linked_list/)
+1. [Merge k Sorted lists](./merge_k_sorted_list/)

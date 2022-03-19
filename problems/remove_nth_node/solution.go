@@ -7,7 +7,7 @@ import (
 )
 
 /**
- * Definition for singly-linked list.
+ * Two poiters strategy will help in solution.
  *
  */
 
@@ -80,4 +80,75 @@ func CreateList(arr []int) *ListNode {
 	}
 	return head
 
+}
+
+func removeNthFromEnd2(head *ListNode, n int) *ListNode {
+	var nhead, temp *ListNode
+	count := 1
+	nhead = head
+	for count <= n && nhead != nil {
+		fmt.Printf("first for %v\t%v\n", count, nhead.GetValue())
+		nhead = nhead.GetNext()
+		count++
+	}
+
+	if nhead == nil {
+		return head.GetNext()
+	}
+
+	temp = head
+	fmt.Printf("before for %v\t%v\n", temp, nhead)
+	for nhead != nil {
+		if nhead.GetNext() == nil {
+			break
+		}
+		temp = temp.GetNext()
+		nhead = nhead.GetNext()
+		fmt.Printf("for %v\t%v\n", temp, nhead)
+	}
+	next := temp.GetNext().GetNext()
+	temp.GetNext().SetNext(nil)
+	temp.SetNext(next)
+
+	return head
+}
+
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
+	nhead := NewNode(0)
+	nhead.SetNext(head)
+	count := 0
+
+	first := nhead
+	second := nhead
+	for count <= n && nhead != nil {
+		// fmt.Printf("for %v\t%v\n", count, first.GetValue())
+		first = first.GetNext()
+		count++
+	}
+
+	for first != nil {
+		// fmt.Printf("choose for %v\t%v\n", first.GetValue(), second.GetValue())
+		first = first.GetNext()
+		second = second.GetNext()
+
+	}
+	second.SetNext(second.GetNext().GetNext())
+
+	return nhead.GetNext()
+}
+
+func main() {
+	listA := []int{5, 7, 9}
+
+	listB := []int{5, 6}
+
+	l1 := CreateList(listA)
+	l2 := CreateList(listB)
+	l1.Print()
+	l2.Print()
+	l3 := removeNthFromEnd2(l1, 2)
+	l3.Print()
+
+	l4 := removeNthFromEnd(l2, 2)
+	l4.Print()
 }
