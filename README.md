@@ -2,4 +2,5 @@
 House of Money
 
 
-1. [Problems](./problems/)
+1. [Problems](./problems/README.md)
+1. [Data Structures](./dsa/README.md)
