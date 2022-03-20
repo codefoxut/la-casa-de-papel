@@ -22,3 +22,9 @@
 1. [Remove nth Node](./remove_nth_node/)
 1. [Odd Even Linked List](./odd_even_linked_list/)
 1. [Merge k Sorted lists](./merge_k_sorted_list/)
+
+1. [Subset](./subset/)
+1. [Letter Combinations for a phone number between 2-9](./letter_combinations/)
+1. [Word Search](./word_search/)
+1. [Combination sum](./combination_sum/)
+1. [Palindrome Partitioning](./palindrome_partitioning/)
